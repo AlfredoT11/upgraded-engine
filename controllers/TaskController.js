@@ -11,7 +11,7 @@ module.exports = {
                 return res.status(200).send(tasks);
             })
             .catch((err) => {
-                console.log('error mega importante super necesario saber que paso en el instante', err);
+                console.log('Error en TaskController.getAllTasks', err);
                 return res.status(500).send('Hubo un error');
             });
     },
